@@ -4,12 +4,33 @@
     position: relative;
 }
 
-.movieRow--banner-img {
+.movieRow--banner-principal {
+    position: relative;
+    background: linear-gradient(to top, #111, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movieRow--banner-principal img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     position: absolute;
     z-index: -1;
-    background: linear-gradient(to top, #111, transparent);
+}
+.movieRow--banner-principal h1,
+.movieRow--banner-principal h3 {
+    max-width: 800px;
+    margin-left: 30px;
+}
+
+.movieRow--banner-principal h1 {
+    font-size: 48px;
+}
+
+.movieRow--banner-principal h3 {
+    font-weight: 400;
+    font-size: 16px;
 }
